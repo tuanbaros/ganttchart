@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="@dimen/dp_41"
+                android:id="@+id/recycler_task"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_alignStart="@+id/recycler_day"
+                android:layout_alignEnd="@+id/recycler_day"
+                android:layout_alignLeft="@+id/recycler_day"
+                android:layout_alignRight="@+id/recycler_day"/>
+
+        </RelativeLayout>
+        
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -21,7 +21,6 @@ gradlew.bat
 gradle/
 *.apk
 
-#
 *~
 *.swp
 app/src/androidTest/
